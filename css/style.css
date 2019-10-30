@@ -59,6 +59,32 @@ Table of contents
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+
+.bobody {
+    
+  background-color: #b61b1b;
+  animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+}
+
+@-webkit-keyframes bg-color {
+  0% { background-color: #9abe56; }
+
+  
+  100% { background-color: #2f497f; }
+}
+
+@keyframes bg-color {
+   0% { background-color: #2f497f; }
+ 
+  
+  66% { background-color: #9abe56; }
+
+
+    100% { background-color: #2f497f; }
+}
+
+
 /* ===================================
     Reset
 ====================================== */
@@ -67,6 +93,7 @@ Table of contents
 .verdedacsa{color:#9abe56 !important;}
 .azuldacsa{color:#2f497f !important;}
 .bordes{border-bottom: #2f497f !important; }
+.navbar{box-shadow: 7px 7px 11px 0px rgba(112, 111, 111, 0.3); }
 body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em }
 a, a:active{ color: #626262; text-decoration: none; }
 a:hover, a:focus{ color: #272727;  text-decoration: none}
@@ -124,7 +151,9 @@ h1.page-title { margin:95px auto 0; width: 100%; }
 .text-extra-small { font-size:10px !important; line-height:15px!important;}
 .text-small { font-size:11px !important; line-height:20px!important; display: inline-block !important}
 .text-medium{ font-size:14px !important; line-height:24px !important;}
+.text-medium2{ font-size:19px !important; line-height:28px !important;}
 .text-large { font-size: 15px !important; line-height: 22px !important; }
+.text-large2 { font-size: 22px !important; line-height: 22px !important; }
 .text-extra-large { font-size: 18px !important; line-height: 27px !important;  }
 .title-small{ font-size:20px !important; line-height:30px !important;}
 .title-medium{ font-size:24px !important; line-height:28px !important;}
@@ -340,7 +369,7 @@ i { color: #9a9a9a; margin:0}
 .bg-deep-green {background: #1acd7b !important; }
 .bg-deep-green2{background: #7ebaa1 !important;}
 .bg-deep-green-dark{background: #04b966 !important;}
-.bg-deep-green-dark2{background: #6ad5a7 !important;}
+.bg-deep-green-dark2{background: #9abe56 !important;}
 .bg-deep-green-dark3{background: #62a486 !important;}
 .bg-deep-blue {background: #2283d4 !important; }
 .bg-transparent-deep-blue{ background: rgba(17,116,198,.9) !important}
@@ -1442,8 +1471,8 @@ footer img {max-width: 156px;}
 .footer-social a { margin: 0 25px; display: inline-block;}
 .footer-social a:first-child {margin-left: 0}
 .footer-social a:last-child {margin-right: 0}
-.footer-social a i {color: #575757; }
-.footer-social a:hover i { color: #868686}
+.footer-social a i {color: #fff; }
+.footer-social a:hover i { color: #f7f7f7}
 .social-icon.footer-social a { margin: 0 8px; }
 .social-icon.footer-social a:hover i { color:#fff}
 
@@ -1630,7 +1659,7 @@ footer img {max-width: 156px;}
     Tattoo demo
 ====================================== */
 
-.section-top-pattern{background:url(../images/tattoo-icon-bg.jpg) no-repeat top center;}
+.section-top-pattern{background:url(images/fondo.jpg) no-repeat top left;}
 .tattoo-art-bg{ min-height: 710px;}
 .tattoo-art-title{ border: 7px solid #6ad5a7;}
 .artist-info{ opacity: 0; height: 100%; width: 100%; background: rgba(255,255,255,0.9); padding: 15% 15% 0;}
